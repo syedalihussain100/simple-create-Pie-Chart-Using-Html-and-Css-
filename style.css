@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.main_div {
+  /* background-color: #a5b1c2; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center_div {
+  height: calc(100vh - 40vh);
+  width: calc(100vw - 40vw);
+  position: relative;
+  box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.75);
+}
+
+.center_div h2 {
+  padding: 20 0px 20px 20px;
+}
+
+.center_div p {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+  font-style: italic;
+}
+
+.center_div span::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: currentColor;
+  font-weight: 800;
+  margin: 0px 0.5rem;
+}
+
+.center_div h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  font-style: italic;
+  color: gray;
+  font-weight: normal;
+}
+
+/* create pie chart */
+.pie_chart {
+  background: radial-gradient(circle closest-side, transparent, 100%, #fff 0),
+    conic-gradient(
+      from 180deg,
+      #a55eea 0,
+      #a55eea 20%,
+      #eb3b5a 0,
+      #eb3b5a 40%,
+      #fa8231 0,
+      #fa8231 60%,
+      #20bf6b 0,
+      #20bf6b 80%,
+      #3867d6 0,
+      #3867d6 100%
+    );
+  min-width: 300px;
+  min-height: 250px;
+}
